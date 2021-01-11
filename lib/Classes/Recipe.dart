@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mychef_app/Classes/Ingredients.dart';
 
 class Recipe {
   //Create enums for some of these
@@ -8,11 +9,12 @@ class Recipe {
   String meal;
   String diet;
   String cuisine;
-  String time;
+  int time;
   String difficulty;
   List ingredients;
   bool isResult; //based on bottom nav bar
   bool isSaved; //based on bottom nav bar
+  //TODO: create condition if a recipe is saved or not
 
   Recipe({
     @required this.name,

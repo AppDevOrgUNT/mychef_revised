@@ -10,7 +10,7 @@ const kBlueColor = Color(0xff7ba4dd);
 const kYellowColor = Color(0xffebb000);
 
 const kCheckboxLength = 150.0;
-const kCheckboxCircle = 23.0; //also modifies the size of the checkbox itself
+const kCheckboxCircle = 22.0; //also modifies the size of the checkbox itself
 
 //TODO: download Montserrat font from google
 
@@ -60,4 +60,21 @@ const kRecipeSubSubTextStyle = TextStyle(
   fontWeight: FontWeight.w500,
   fontSize: 12.0,
   color: Color(0xffffedc9),
+);
+
+const kSubPageRecipeNameTextStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 26.5,
+  color: Colors.white,
+);
+
+const kSubPageRecipeSubTextStyle = TextStyle(
+  fontWeight: FontWeight.w500,
+  fontSize: 20.0,
+  color: Color(0xffeeffcc),
+);
+
+const kSubPageRecipeSubSubTextStyle = TextStyle(
+  fontSize: 16.0,
+  color: Color(0xffeeffcc),
 );

@@ -3,7 +3,7 @@ import 'package:mychef_app/CustomWidgets/listOfRecipes.dart';
 import '../Data/constants.dart';
 import '../CustomWidgets/customAppBar.dart';
 import '../AppPages/homePage.dart';
-import 'resultsPage.dart';
+import 'recipePage.dart';
 
 class Pages extends StatefulWidget {
   @override

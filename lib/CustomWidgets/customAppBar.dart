@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../Data/constants.dart';
+import '../AppPages/searchPage.dart';
+import '../AppPages/settingsPage.dart';
 
 class CustomAppBar extends StatelessWidget {
   final String title;
@@ -41,8 +43,14 @@ class CustomAppBar extends StatelessWidget {
                 children: <Widget>[
                   GestureDetector(
                     onTap: () {
-                      print('Search Button Pressed');
+                      //sprint('Search Button Pressed');
                       //TODO: Implement search functionality
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SearchPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: EdgeInsets.only(bottom: 15.0),
@@ -54,8 +62,15 @@ class CustomAppBar extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      print('Settings Button Pressed');
+                      //print('Settings Button Pressed');
                       //TODO: Implement Settings functionality
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SettingsPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: EdgeInsets.only(bottom: 15.0),

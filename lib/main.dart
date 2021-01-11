@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'AppPages/Pages.dart';
-import 'AppPages/resultsPage.dart';
+import 'AppPages/recipePage.dart';
 
 void main() => runApp(MyChef());
 

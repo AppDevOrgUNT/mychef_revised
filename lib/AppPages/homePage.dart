@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mychef_app/AppPages/resultsPage.dart';
+import 'package:mychef_app/AppPages/recipePage.dart';
 import '../Data/constants.dart';
 import '../Data/ingredients_lists.dart';
 import '../CustomWidgets/categoryRecipeList.dart';
