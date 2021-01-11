@@ -12,6 +12,8 @@ const kYellowColor = Color(0xffebb000);
 const kCheckboxLength = 150.0;
 const kCheckboxCircle = 23.0; //also modifies the size of the checkbox itself
 
+//TODO: download Montserrat font from google
+
 const kAppBarTitleTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 30.0,
@@ -40,4 +42,22 @@ const kCategoryLabelTextStyle = TextStyle(
   fontWeight: FontWeight.w700,
   fontSize: 18.0,
   color: Colors.black54,
+);
+
+const kRecipeNameTextStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 20.0,
+  color: Colors.white,
+);
+
+const kRecipeSubTextStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 14.0,
+  color: Color(0xffffedc9),
+);
+
+const kRecipeSubSubTextStyle = TextStyle(
+  fontWeight: FontWeight.w500,
+  fontSize: 12.0,
+  color: Color(0xffffedc9),
 );
