@@ -1,4 +1,4 @@
-import 'ingredients.dart';
+import '../Classes/ingredients.dart';
 
 //List of food categories: protein, grains, vegetables, fruits, dairy
 

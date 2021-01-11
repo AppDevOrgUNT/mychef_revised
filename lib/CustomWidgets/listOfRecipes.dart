@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../Data/constants.dart';
 
 class ListOfRecipes extends StatelessWidget {
   @override

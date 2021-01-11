@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'customCheckBox.dart';
-import 'constants.dart';
+import '../Data/constants.dart';
 
 class CategoryRecipeList extends StatefulWidget {
   final String categoryName;

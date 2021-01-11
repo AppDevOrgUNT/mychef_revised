@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mychef_app/listOfRecipes.dart';
-import 'constants.dart';
-import 'customAppBar.dart';
-import 'homePage.dart';
+import 'package:mychef_app/CustomWidgets/listOfRecipes.dart';
+import '../Data/constants.dart';
+import '../CustomWidgets/customAppBar.dart';
+import '../AppPages/homePage.dart';
 import 'resultsPage.dart';
 
 class Pages extends StatefulWidget {

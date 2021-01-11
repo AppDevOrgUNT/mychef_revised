@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mychef_app/resultsPage.dart';
-import 'constants.dart';
-import 'ingredients_lists.dart';
-import 'categoryRecipeList.dart';
+import 'package:mychef_app/AppPages/resultsPage.dart';
+import '../Data/constants.dart';
+import '../Data/ingredients_lists.dart';
+import '../CustomWidgets/categoryRecipeList.dart';
 
 class HomePage extends StatefulWidget {
   @override
