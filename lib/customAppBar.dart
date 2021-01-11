@@ -37,18 +37,35 @@ class CustomAppBar extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  print('Search Button Pressed');
-                  //TODO: Implement search functionality
-                },
-                child: Container(
-                  padding: EdgeInsets.only(bottom: 30.0),
-                  child: Icon(
-                    Icons.search,
-                    color: Colors.white,
+              child: Column(
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      print('Search Button Pressed');
+                      //TODO: Implement search functionality
+                    },
+                    child: Container(
+                      padding: EdgeInsets.only(bottom: 15.0),
+                      child: Icon(
+                        Icons.search,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
-                ),
+                  GestureDetector(
+                    onTap: () {
+                      print('Settings Button Pressed');
+                      //TODO: Implement Settings functionality
+                    },
+                    child: Container(
+                      padding: EdgeInsets.only(bottom: 15.0),
+                      child: Icon(
+                        Icons.dehaze,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
