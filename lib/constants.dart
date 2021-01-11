@@ -9,6 +9,8 @@ const kRedColor = Color(0xffc65d3e);
 const kBlueColor = Color(0xff7ba4dd);
 const kYellowColor = Color(0xffebb000);
 
+const kCheckBoxWidth = 130.0;
+
 const kAppBarTitleTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 30.0,
@@ -27,6 +29,13 @@ const kCategoryTextStyle = TextStyle(
 );
 
 const kCheckboxLabelTextStyle = TextStyle(
-  fontWeight: FontWeight.w200,
+  fontWeight: FontWeight.w400,
+  color: Colors.white,
   fontSize: 14.0,
+);
+
+const kCategoryLabelTextStyle = TextStyle(
+  fontWeight: FontWeight.w700,
+  fontSize: 18.0,
+  color: Colors.black54,
 );
