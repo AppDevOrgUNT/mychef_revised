@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mychef_app/resultsPage.dart';
 import 'constants.dart';
-import 'lists.dart';
-import 'customCheckBox.dart';
+import 'ingredients_lists.dart';
+import 'categoryRecipeList.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,72 +10,74 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final _trackingScrollController = TrackingScrollController();
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       padding: EdgeInsets.only(
-        //left: 20.0,
         top: 30.0,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(
-              left: 10.0,
-            ),
-            child: Text(
-              'Category',
-              style: kCategoryLabelTextStyle,
-            ),
+          CategoryRecipeList(
+            categoryName: 'Proteins',
+            row1: proteinsR1,
+            row2: proteinsR2,
+            categoryColor: kRedColor,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(
-              vertical: 2.0,
+          CategoryRecipeList(
+            categoryName: 'Grains',
+            row1: grainsR1,
+            row2: grainsR2,
+            categoryColor: kYellowColor,
+          ),
+          CategoryRecipeList(
+            categoryName: 'Vegetables',
+            row1: vegetablesR1,
+            row2: vegetablesR2,
+            categoryColor: kGreenColor,
+          ),
+          CategoryRecipeList(
+            categoryName: 'Fruits',
+            row1: fruitsP1,
+            row2: fruitsP2,
+            categoryColor: kPurpleColor,
+          ),
+          CategoryRecipeList(
+            categoryName: 'Dairy',
+            row1: dairyP1,
+            row2: dairyP2,
+            categoryColor: kBlueColor,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => RecipePage(),
+                ),
+              );
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(
+                horizontal: 40.0,
+                vertical: 10.0,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15.0),
+                color: Colors.amber,
+              ),
+              child: Text(
+                'Get Recipes',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  //fontWeight: FontWeight.bold,
+                  fontSize: 35.0,
+                  color: Colors.white,
+                ),
+              ),
             ),
-            color: Colors.grey,
-            height: 80.0,
-            child: ListView.builder(
-                controller: _trackingScrollController,
-                physics: ClampingScrollPhysics(),
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemCount: 5,
-                itemBuilder: (BuildContext context, int index) {
-                  return Padding(
-                    padding: EdgeInsets.symmetric(
-                      vertical: 8.0,
-                    ),
-                    child: Column(
-                      children: <Widget>[
-                        CustomCheckbox(
-                          label: ingredientsP1[index],
-                          isChecked: isSelectedP1[index],
-                          tapped: (bool newValue) {
-                            setState(() {
-                              isSelectedP1[index] = newValue;
-                            });
-                          },
-                        ),
-                        SizedBox(
-                          height: 7.0,
-                        ),
-                        CustomCheckbox(
-                          label: ingredientsP2[index],
-                          isChecked: isSelectedP2[index],
-                          tapped: (bool newValue) {
-                            setState(() {
-                              isSelectedP2[index] = newValue;
-                            });
-                          },
-                        ),
-                      ],
-                    ),
-                  );
-                }),
           ),
         ],
       ),

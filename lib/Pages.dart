@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mychef_app/listOfRecipes.dart';
 import 'constants.dart';
 import 'customAppBar.dart';
 import 'homePage.dart';
+import 'resultsPage.dart';
 
 class Pages extends StatefulWidget {
   @override
@@ -24,9 +26,9 @@ class _PagesState extends State<Pages> {
   ];
 
   static List<Widget> _widgetOptions = <Widget>[
-    Text('Index 0: Page 1'),
+    ListOfRecipes(),
     HomePage(),
-    Text('Index 2: Page 3'),
+    ListOfRecipes(),
   ];
 
   void _onItemTapped(int index) {

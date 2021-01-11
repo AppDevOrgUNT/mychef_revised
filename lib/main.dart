@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'mainPages.dart';
+import 'Pages.dart';
+import 'resultsPage.dart';
 
 void main() => runApp(MyChef());
 
@@ -7,10 +8,11 @@ class MyChef extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/home',
+      initialRoute: '/',
       routes: {
         //access different pages
-        '/home': (context) => Pages(),
+        '/': (context) => Pages(),
+        '/recipes': (context) => RecipePage(),
       },
     );
   }
