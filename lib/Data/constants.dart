@@ -35,7 +35,7 @@ const kCategoryTextStyle = TextStyle(
 const kCheckboxLabelTextStyle = TextStyle(
   fontWeight: FontWeight.w400,
   color: Colors.white,
-  fontSize: 14.0,
+  fontSize: 15.0,
 );
 
 const kCategoryLabelTextStyle = TextStyle(

@@ -3,7 +3,7 @@ import 'package:mychef_app/CustomWidgets/listOfRecipes.dart';
 import '../Data/constants.dart';
 import '../CustomWidgets/customAppBar.dart';
 import '../AppPages/homePage.dart';
-import 'recipePage.dart';
+import '../CustomWidgets/listOfSavedRecipes.dart';
 
 class Pages extends StatefulWidget {
   @override
@@ -28,7 +28,7 @@ class _PagesState extends State<Pages> {
   static List<Widget> _widgetOptions = <Widget>[
     ListOfRecipes(),
     HomePage(),
-    ListOfRecipes(),
+    ListOfSavedRecipes(),
   ];
 
   void _onItemTapped(int index) {
